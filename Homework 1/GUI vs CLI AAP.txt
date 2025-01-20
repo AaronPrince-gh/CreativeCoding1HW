@@ -1,0 +1,22 @@
+I've gathered that there are several key differences between a GUI and CLI.
+Almost everybody is familiar with GUIs.  Whether it is file explorer or
+an in-application menu, we have used graphical user interfaces in our
+file management and program navigation.  GUIs are designed with user-friendliness
+and ease of access in mind.  They often have obvious graphical elements including
+buttons and icons.
+
+On the other hand, CLIs are useful to programmers and more tech-savvy users most
+concerned with efficiency and direct access.  The most known example of a CLI is the
+Command Prompt on Windows, which usually only serves to scare Windows users when it
+opens, but it has many uses which are inaccessible via GUIs.  You can directly access
+and interact with directories via CLIs and automate functions which would take
+a long amount of time to accomplish with a GUI.
+
+It is important to note that the command-line interface interacts directly with a
+computer's operating system and expects/requires knowledge of the operating system's
+tools.  As the name suggests, you can input commands which will always consistently
+output a result or execute a task as instructed with no navigation or menu-searching
+required.  This can also be the enemy of somebody who doesn't know what they are doing.
+All in all, the power of the CLI is to provide a more thorough and efficient
+tool to manipulate a computer's OS, while the GUI makes navigating the OS and its files
+much easier and more comprehensive.
