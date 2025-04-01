@@ -1,0 +1,49 @@
+<html>
+    <title>do you hate </title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="mainstyle.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script>
+            var name = "";
+            var phone = "";
+            function getData()
+            {
+                var name = document.getElementById("tu-nombre").value;
+                var phone = document.getElementById("tu-numero").value;
+                if (String(name) == "") {
+                    window.alert("Can you type?");
+                    document.getElementById("tu-nombre").className = document.getElementById("tu-nombre").className + " error";
+                    document.getElementById("tu-nombre").focus();
+                }
+                else if (String(phone) == "") {
+                    window.alert("Can you type??");
+                    document.getElementById("tu-numero").className = document.getElementById("tu-numero").className + " error";
+                    document.getElementById("tu-numero").focus();
+                }
+                else {
+                    window.alert("worm info: " + name + ", " + phone);
+                }
+            }
+            </script>
+    </head>
+    <body style="background-color: aquamarine;">
+        <h3>Do you hate Apex Legends?</h3>
+        <br>
+        <form class="anger">
+            <input class="rage" type="radio" name="yn" value="Yes">Yes<br>
+            <input type="radio" name="yn" value="No">No<br>
+        </form>
+        <br>
+        <br>
+        <a href="2ndpage.html">Apex</a> | <a href="Home.html">Home</a>
+        <br>
+        <br>
+        <h3>Contact me, Worm:</h3>
+        <form style="background-color: rgb(81, 254, 248)">
+            <input type="text" value="" id="tu-nombre">name<br>
+            <input type="text" value="" id="tu-numero">phone<br>
+            <button id="btnSubmit" class="btn btn-primary" onClick="getData();">Submit My Info</button>
+        </form>
+        <br>
+    </body>
+</html>
