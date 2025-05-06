@@ -34,10 +34,11 @@ class projectile {
 }
 
 let song;
+var songplaying = false;
 
 function touchStarted() {
     getAudioContext().resume();
-    if(!song.isPlaying()) {song.play();}
+    if(songplaying == false) {song.play(); songplaying = true;}
   }
 
 function preload() {
