@@ -34,7 +34,7 @@ class projectile {
 }
 
 let song;
-var songplaying = false;
+var songplaying;
 
 function touchStarted() {
     getAudioContext().resume();
@@ -43,12 +43,13 @@ function touchStarted() {
 
 function preload() {
     song = loadSound("worm.mp3");
+    songplaying = false;
 }
 
 function setup() {
-    fill(0)
+    fill(0);
     createCanvas(2000, 1000);
-    rect(0, 0, 2000, 1000)
+    rect(0, 0, 2000, 1000);
 }
 
 //function mousePressed()// {
