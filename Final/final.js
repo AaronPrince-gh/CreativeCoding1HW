@@ -37,11 +37,11 @@ let song;
 
 function touchStarted() {
     getAudioContext().resume();
-    song = loadSound('https://apo.mp3');
     song.play();
   }
 
 function preload() {
+    song = loadSound("aqo.mp3");
 }
 
 function setup() {
