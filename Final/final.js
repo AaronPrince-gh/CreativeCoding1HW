@@ -45,7 +45,7 @@ function touchStarted() {
   }
 
 function preload() {
-    //song = loadSound("worm.mp3");
+    song = loadSound("worm.mp3");
     songplaying = false;
 }
 
