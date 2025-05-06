@@ -38,7 +38,10 @@ var songplaying;
 
 function touchStarted() {
     getAudioContext().resume();
-    if(songplaying == false) {song.play(); songplaying = true;}
+    if(song.isPlaying()) {
+        song.stop(); 
+    }
+    else {song.play();}
   }
 
 function preload() {
