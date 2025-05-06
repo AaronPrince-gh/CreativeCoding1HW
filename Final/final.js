@@ -37,7 +37,7 @@ let song;
 
 function touchStarted() {
     getAudioContext().resume();
-    song.play();
+    if(!song.isPlaying()) {song.play();}
   }
 
 function preload() {
@@ -45,7 +45,9 @@ function preload() {
 }
 
 function setup() {
+    fill(0)
     createCanvas(2000, 1000);
+    rect(0, 0, 2000, 1000)
 }
 
 //function mousePressed()// {
