@@ -36,12 +36,12 @@ class projectile {
 let song;
 
 function touchStarted() {
-    getAudioContext().resume();
+    //getAudioContext().resume();
     song.play();
   }
 
 function preload() {
-    song = loadSound("aqo.mp3");
+    song = loadSound("worm.mp3");
 }
 
 function setup() {
