@@ -36,7 +36,7 @@ class projectile {
 let song;
 
 function touchStarted() {
-    //getAudioContext().resume();
+    getAudioContext().resume();
     song.play();
   }
 
